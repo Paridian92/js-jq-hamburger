@@ -1,15 +1,15 @@
 $(document).ready(function(){
-  var burgermenu = $('hamburger-menu');
+  var burgermenu = $('.hamburger-menu');
   var aperto = true 
 
-  burgermenu.click(function(){
+  $('i').click(function(){
     if(aperto){
-      burgermenu.hide();
+      burgermenu.fadeOut();
     }else{
-      burgermenu.show()
+      burgermenu.fadeIn()
     }
-
     aperto = !aperto
+    
   })
 
 })
